@@ -58,7 +58,7 @@ def page_not_found(error):
 def profile():
     """Render profile page."""
     timeinfo = time.strftime("%a, %b %d %Y")
-    return render_template('profile.html', timeinfo)
+    return render_template('profile.html', curr_date=timeinfo)
 
 
 if __name__ == '__main__':
