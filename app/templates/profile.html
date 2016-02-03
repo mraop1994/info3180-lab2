@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+
+{% block css %}
+<style type="text/css">
+  body{
+    padding-top: 40px;
+  }
+  
+  .content {
+    width: auto;
+    overflow: hidden;
+}
+
+.c1 {
+    overflow: hidden;
+}
+
+.content img {
+    margin-right: 15px;
+    float: left;
+}
+
+#box1 {
+    width: 400px;
+    margin-right: 170px;
+    margin-top:20px;
+    padding-left: 10px;
+   
+}
+
+#box2 {
+    width: 300px;
+    margin-right: 270px;
+    padding: 20px 20px 0px 40px;
+}
+
+#box3 {
+    width: 300px;
+    margin-right: 270px;
+    padding: 20px 20px 100px 40px;
+}
+
+.cols {
+    background-color: #83ebfa;
+    border:2px solid black;
+    padding:5px;
+    float: right;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+</style>
+{% endblock %}
+
+
+{% block main %}
+<div class="content">
+    <img src="https://lh3.googleusercontent.com/-XY3jDcN_oSc/AAAAAAAAAAI/AAAAAAAAAMo/fkx_weC6VsY/photo.jpg" alt="Andrew Philp" id="pic" />
+    <div class="c1">
+        <h3 id=box1 class=cols>Andrew Philp</h3>
+        <br/>
+        <p id=box2 class=cols>Today is: {{ timeinfo }}</p>
+        <div id=box3 class=cols>
+          <p>Username: mraop1994</p>
+          <p>ID: 10021717</p>
+          <p>Sex: Male</p>
+          <p>Age: 21</p>
+          <p>Highest Score: 17278</p>
+          <p>TDollars: 100000</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
